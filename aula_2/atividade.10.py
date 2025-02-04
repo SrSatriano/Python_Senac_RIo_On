@@ -3,23 +3,21 @@
 # solicite ao usuário que escolha uma das operações: +, -, x ou ÷. Realize a
 # operação escolhida e exiba o resultado.
 
-num1 = int(input("Digite o primeiro número: "))
-num2 = int(input("Digite o segundo número: "))
-operacao = input("Digite a operação desejada (+, -, x ou ÷): ")
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
 
-if operacao == "+":
+print("\n1 - Adição (+)\n2 - Subtração (-)\n3 - Multiplicação (×)\n4 - Divisão (÷)")
+opcao = input("Escolha a operação (1/2/3/4): ")
+
+if opcao == "1":
     resultado = num1 + num2
-
-elif operacao == "-":
+elif opcao == "2":
     resultado = num1 - num2
-
-elif operacao == "x":
+elif opcao == "3":
     resultado = num1 * num2
-
-elif operacao == "÷":
-    resultado = num1 / num2
-
+elif opcao == "4":
+    resultado = num1 / num2 if num2 != 0 else "Erro: divisão por zero"
 else:
-    print("Operação inválida.")
+    resultado = "Opção inválida"
 
-print("O resultado da operação {} {} {} é {}".format(num1, operacao, num2, resultado))  
+print(f"\nResultado: {resultado}")
