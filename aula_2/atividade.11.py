@@ -6,11 +6,10 @@
 
 idade = int(input("Digite sua idade: "))
 
-if idade < 18:
-    print("Menor de idade.")
-
-elif idade >= 16 and idade < 18:
-    print("Pode votar mas não dirigir.")
-
+if idade < 16:
+    print("Menor de idade, não pode votar e nem dirigir.")
+elif idade < 18:
+    print("Pode votar, mas não pode dirigir.")
+    
 else:
-    print("Pode votar e dirigir.")  
+    print("Pode votar e dirigir.")
