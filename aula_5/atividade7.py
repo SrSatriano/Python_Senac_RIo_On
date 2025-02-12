@@ -5,11 +5,11 @@ que o produto não foi encontrado.
 '''
 
 produtos = {
-    "produto1": 10,
-    "produto2": 20,
-    "produto3": 30,
-    "produto4": 40,
-    "produto5": 50
+    "manga": 10,
+    "feijao": 20,
+    "refri": 30,
+    "batata": 40,
+    "bala": 50
 }
 
 nome_produto = input("Digite o nome do produto: ")
